@@ -7,11 +7,13 @@ import Browse from "./components/Browse";
 import Features from "./components/Features";
 import MoreInfo from "./components/Moreinfo";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import NewProjectForm from "./components/NewProjectForm";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <NewProjectForm />
       <Router>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
