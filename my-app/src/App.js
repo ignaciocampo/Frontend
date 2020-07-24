@@ -15,29 +15,26 @@ import {
 
 function App() {
   return (
+    <Router>
     <div className="App">
         <Navbar />
-        <Router>
+       
 
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/Features" component = {Features}>
-            <Features />
-          </Route>
-          <Route path="/Browse" component = {Browse}>
-            <Browse />
-          </Route>
-          <Route path="/MoreInfo" component = {MoreInfo}>
-            <MoreInfo />
-          </Route>
-          <Route path="/SignUp" component = {SignUp}>
-            <SignUp />
-          </Route>
+          <Route path="/features" component={Features}/>
+          
+          <Route path="/browse" component={Browse}/>
+          
+          <Route path="/moreInfo" component={MoreInfo}/>
+       
+          <Route path="/signUp" component={SignUp}/>
         </Switch>
-    </Router>
+    
     </div>
+    </Router>
   );
 }
 
